@@ -76,3 +76,28 @@
 .body::-webkit-scrollbar-track {
   border-radius: 10px;  
 }
+
+/*? =============== Header =============== */
+
+.header {
+  margin: auto;
+  padding: 0 30px;
+  
+  height: 70px;
+  width: 100%;
+  max-width: 850px;
+  
+  position: absolute;
+  z-index: 2;
+  
+  display: grid;
+  align-items: center;
+}
+
+/*! ======= Header Brand ======= */
+
+.header__brand {
+  font-size: 1.375rem;
+  font-weight: bold;
+  color: var(--clr-t-2);
+}
