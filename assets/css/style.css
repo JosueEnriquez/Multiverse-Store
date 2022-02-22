@@ -466,3 +466,137 @@
 .introduction-image {
   height: 100px;
 }
+
+/*! ======= Store ======= */
+
+.store {
+  margin-top: -30px;
+  padding: 40px 25px 30px;
+  
+  display: grid;
+  grid-gap: 25px;
+  
+  text-align: center;
+}
+
+.store-title {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: "Teko", sans-serif;
+  
+  letter-spacing: 2px;
+  color: var(--clr-t-2);
+  text-shadow: 0px 0px 20px var(--clr-t-2);
+}
+
+.store:target .store-title {
+  animation: fadeInRight 1s;
+}
+
+.store-slider {
+  padding: 20px;
+  
+  position: relative;
+  
+  height: 560px;
+  min-height: 266px;
+  width: 100%;
+  max-width: 900px;
+  
+  border-radius: 20px;
+  background: linear-gradient(153deg, #865b75 0, #383a51 95%);
+  overflow: hidden;
+}
+
+.slides {
+  position: absolute;
+  left: -100%;
+  
+  height: calc(100% - 40px);
+  
+  display: flex;
+  
+  cursor: pointer;
+}
+
+.slides.transition {
+  transition: all 0.3s ease-in-out;
+}
+
+.slide {
+  height: 100%;
+  width: calc(100vw - 50px);
+  max-width: 900px;
+  
+  display: grid;
+  grid-template-rows: 43% 57%;
+  justify-content: center;
+}
+
+.slide-img {
+  margin: auto;
+  
+  height: 100%;
+  width: min-content;
+}
+
+.slide-description-container {
+  padding: 20px;
+}
+
+.slide-name {
+  padding-bottom: 10px;
+  
+  font-family: "Teke", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  
+  color: var(--clr-t-2);
+}
+
+.slide-description {
+  padding-bottom: 15px;
+  
+  color: var(--clr-t-2);
+}
+
+.slide-btn {
+  padding: 5px 30px;
+  
+  font-size: 1.5rem;
+  font-weight: 700;
+  
+  color: var(--clr-t-2);
+  letter-spacing: 0.1em;
+  background-color: var(--clr-pink);
+  border: 1px solid var(--clr-pink);
+  border-radius: 10px;
+  box-shadow: 0 0 10px var(--clr-pink);
+}
+
+.store-btn-prev,
+.store-btn-next {
+  position: absolute;
+  top: 48%;
+  
+  font-size: 2rem;
+  
+  color: #f3f3f3;
+  transform: translateY(-50%);
+}
+
+.store-btn-prev {
+  left: 0.5rem;
+}
+
+.store-btn-next {
+  right: 0.5rem;
+}
+
+.store-btn-prev:active,
+.store-btn-next:active {
+  color: #888;
+}
