@@ -856,3 +856,23 @@
   
   transition: 0.5s;
 }
+
+/*? =============== Footer =============== */
+
+.footer {
+  padding: 40px 25px 90px;
+ 
+  display: grid;
+  grid-gap: 25px;
+ 
+  width: 100%;
+ 
+  color: var(--clr-t-3);
+  background-color: var(--clr-bg-2);
+  text-align: center;
+}
+
+.footer-gratitude-name {
+  color: var(--clr-t-2);
+  text-shadow: 0px 0px 20px var(--clr-t-2);
+}
