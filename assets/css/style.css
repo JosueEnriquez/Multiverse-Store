@@ -1,0 +1,32 @@
+/*? =============== Fuentes =============== */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap");
+
+/*? =============== Variables =============== */
+
+:root {
+  --clr-bg-1: #1c1026;
+  --clr-bg-2: #150d1c;
+  --clr-bg-3: #0f0717;
+  
+  --clr-t-1: #ffffff;
+  --clr-t-2: #f1f1f1;
+  --clr-t-3: #827c85;
+  
+  --clr-red: #ff0000;
+  --clr-pink: #ff308f;
+  --clr-light-pink: #ff6ec5;
+  --clr-light-purple: #df2fff;
+  --clr-purple: #c32aa3;
+  --clr-blue: #1877f2;
+  --clr-light-blue: #00ccff;
+  --clr-sky-blue: #1da1f2;
+  --clr-light-green: #a1e750;
+  --clr-green: #0f0;
+  --clr-dark-green: #25d366;
+  --clr-yellow: #ff0;
+  --clr-golden: #ffcd39;
+  --clr-gray: #d9d9d9;
+}
