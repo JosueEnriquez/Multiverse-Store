@@ -406,9 +406,11 @@
 
 .introduction__description-container {
   padding: 25px;
-  
+
   border: 1px solid rgba(255, 255, 255, 0.17);
   border-radius: 20px;
+  
+  background-color: var(--clr-bg-2);
 }
 
 .introduction-subtitle {
@@ -875,4 +877,175 @@
 .footer-gratitude-name {
   color: var(--clr-t-2);
   text-shadow: 0px 0px 20px var(--clr-t-2);
+}
+
+/*? =============== Media Queries =============== */
+
+@media all and (min-width: 354px) {
+  .slide {
+    grid-template-rows: 47% 53%;
+  }
+}
+
+@media all and (min-width: 412px) {
+  .slide {
+    grid-template-rows: 52% 48%;
+  }
+}
+
+@media all and (min-width: 504px) {
+  .slide {
+    grid-template-rows: 57% 43%;
+  }
+}
+
+@media all and (min-width: 582px) {
+  .slide {
+    grid-template-rows: 61% 39%;
+  }
+
+  .questions {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+  }
+}
+
+@media all and (min-width: 648px) {
+  .body {
+    align-items: center;
+
+    font-size: 14px;
+  }
+  
+  .header {
+    position: fixed;
+    
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .nav {
+    height: 100%;
+    
+    position: static;
+    
+    background-color: transparent;
+  }
+
+  .nav__list {
+    width: auto;
+    
+    gap: 10px;
+  }
+
+  .nav__link-icon {
+    display: none;
+  }
+
+  .nav__link-name {
+    position: static;
+    
+    font-size: 14px;
+    color: var(--clr-t-2);
+    
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .nav__list-item.active .nav__link-name {
+    color: var(--clr-bg-3);
+    
+    transform: translateY(0);
+  }
+
+  .nav__list-item {
+    height: auto;
+    width: auto;
+  }
+
+  .indicator {
+    display: none;
+  }
+
+  .contact__form-input {
+    font-size: 1rem;
+  }
+
+  .footer {
+    padding: 25px;
+    
+    grid-template-columns: minmax(min-content, 400px) minmax(min-content, 400px);
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media all and (min-width: 700px) {
+  .introduction__descriptions-container {
+    grid-template: 1fr / 1fr 1fr;
+    grid-template-areas:
+      "uno dos"
+      "tres tres";
+  }
+
+  .introduction__description-container:nth-child(3) {
+    grid-area: tres;
+  }
+
+  .store-slider {
+    padding: 0;
+    
+    height: auto;
+    
+    background: none;
+  }
+
+  .slides {
+    position: static;
+    
+    height: auto;
+    
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 45px;
+  }
+
+  .slide {
+    padding: 20px 0;
+    
+    position: relative;
+    
+    height: 560px;
+    min-height: 266px;
+    width: 270px;
+    max-width: 900px;
+    
+    grid-template-rows: 43% 57%;
+    
+    border-radius: 20px;
+    background: linear-gradient(153deg, #865b75 0, #383a51 95%);
+  }
+
+  .store-btn-prev {
+    display: none;
+  }
+
+  .store-btn-next {
+    display: none;
+  }
+}
+
+@media all and (min-width: 800px) {
+  .slide {
+    width: 330px;
+  }
+}
+
+@media all and (min-width: 1000px) {
+  
+  .store {
+    padding: 40px 0px 30px;
+  }
+  .slide {
+    width: 270px;
+  }
 }
