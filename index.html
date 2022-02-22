@@ -1,11 +1,492 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Multiverse Store</title>
-</head>
-<body>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multiverse Store</title>
+    <!-- *=============== Css ===============-->
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- *=============== Font Awesome ===============-->
+    <link href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet" />
+  </head>
+  <body class="body">
+    <!-- !=============== Header ===============-->
+    <header class="header">
+      <!-- ?=============== Brand Container ===============-->
+      <div class="header__brand-container">
+        <span class="header__brand">Multiverse Store</span>
+      </div>
+      <!-- ?=============== NavBar ===============-->
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__list-item active">
+            <a class="nav__link" href="#body">
+              <span class="nav__link-icon"><i class="far fa-home"></i></span>
+              <span class="nav__link-name">Home</span>
+            </a>
+          </li>
+          <li class="nav__list-item">
+            <a class="nav__link" href="#introduction">
+              <span class="nav__link-icon"><i class="far fa-book"></i></i></span>
+              <span class="nav__link-name">Manual</span>
+            </a>
+          </li>
+          <li class="nav__list-item">
+            <a class="nav__link" href="#store">
+              <span class="nav__link-icon"><i class="far fa-store"></i></span>
+              <span class="nav__link-name">Store</span>
+            </a>
+          </li>
+          <li class="nav__list-item">
+            <a class="nav__link" href="#about">
+              <span class="nav__link-icon"><i class="far fa-question"></i></span>
+              <span class="nav__link-name">About</span>
+            </a>
+          </li>
+          <li class="nav__list-item">
+            <a class="nav__link" href="#contact">
+              <span class="nav__link-icon"><i class="far fa-address-book"></i></span>
+              <span class="nav__link-name">Contact</span>
+            </a>
+          </li>
+          <div class="indicator"></div>
+        </ul>
+      </nav>
+    </header>
+    <!-- !=============== Main ===============-->
+    <main class="main">
+      <!-- ?=============== Hero ===============-->
+      <section id="hero" class="hero">
+        <div class="hero-blob">
+          <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="100%" id="blobSvg">
+            <defs>
+              <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color: rgb(254, 0, 242);"></stop>
+                <stop offset="100%" style="stop-color: rgb(251, 2, 128);"></stop>
+              </linearGradient>
+            </defs>
+            <path class="blob" fill="url(#gradient)">
+              <animate attributeName="d" dur="5000ms" repeatCount="indefinite"
+                values="M411,299.5Q387,349,353,405.5Q319,462,257.5,439Q196,416,129.5,401Q63,386,66.5,318Q70,250,75,188Q80,126,138,104.5Q196,83,252,77Q308,71,346,111.5Q384,152,409.5,201Q435,250,411,299.5Z;
+                
+                M430,301.5Q392,353,350.5,392Q309,431,248.5,435.5Q188,440,119.5,417.5Q51,395,70.5,322.5Q90,250,80.5,185Q71,120,129,88.5Q187,57,247.5,63.5Q308,70,345,112Q382,154,425,202Q468,250,430,301.5Z;
+                
+                M421,304Q399,358,360.5,414.5Q322,471,259,443.5Q196,416,136.5,396Q77,376,76,313Q75,250,96,201.5Q117,153,156,117.5Q195,82,251,79Q307,76,376,92Q445,108,444,179Q443,250,421,304Z;
+                
+                M417,295Q374,340,341,383.5Q308,427,247.5,434.5Q187,442,138.5,404Q90,366,72,308Q54,250,72.5,192.5Q91,135,134,80Q177,25,244,44Q311,63,341.5,112Q372,161,416,205.5Q460,250,417,295Z;
+                
+                M411.5,312Q421,374,372,424.5Q323,475,253,466Q183,457,136,412Q89,367,45,308.5Q1,250,39,187Q77,124,133,92.5Q189,61,243.5,82.5Q298,104,370.5,107Q443,110,422.5,180Q402,250,411.5,312Z;
+                
+                M446,317Q434,384,377,425Q320,466,252,459Q184,452,119.5,421.5Q55,391,40.5,320.5Q26,250,59.5,193Q93,136,145,111Q197,86,247.5,95Q298,104,369,108Q440,112,449,181Q458,250,446,317Z;
+                
+                M411,299.5Q387,349,353,405.5Q319,462,257.5,439Q196,416,129.5,401Q63,386,66.5,318Q70,250,75,188Q80,126,138,104.5Q196,83,252,77Q308,71,346,111.5Q384,152,409.5,201Q435,250,411,299.5Z">
+              </animate>
+            </path>
+          </svg>
+        </div>
+        <div class="hero-blob">
+          <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="100%" id="blobSvg">
+            <defs>
+              <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color: rgb(254, 0, 242);"></stop>
+                <stop offset="100%" style="stop-color: rgb(251, 2, 128);"></stop>
+              </linearGradient>
+            </defs>
+            <path class="blob" fill="url(#gradient)">
+              <animate attributeName="d" dur="5000ms" repeatCount="indefinite"
+                values="M411,299.5Q387,349,353,405.5Q319,462,257.5,439Q196,416,129.5,401Q63,386,66.5,318Q70,250,75,188Q80,126,138,104.5Q196,83,252,77Q308,71,346,111.5Q384,152,409.5,201Q435,250,411,299.5Z;
+                
+                M430,301.5Q392,353,350.5,392Q309,431,248.5,435.5Q188,440,119.5,417.5Q51,395,70.5,322.5Q90,250,80.5,185Q71,120,129,88.5Q187,57,247.5,63.5Q308,70,345,112Q382,154,425,202Q468,250,430,301.5Z;
+                
+                M421,304Q399,358,360.5,414.5Q322,471,259,443.5Q196,416,136.5,396Q77,376,76,313Q75,250,96,201.5Q117,153,156,117.5Q195,82,251,79Q307,76,376,92Q445,108,444,179Q443,250,421,304Z;
+                
+                M417,295Q374,340,341,383.5Q308,427,247.5,434.5Q187,442,138.5,404Q90,366,72,308Q54,250,72.5,192.5Q91,135,134,80Q177,25,244,44Q311,63,341.5,112Q372,161,416,205.5Q460,250,417,295Z;
+                
+                M411.5,312Q421,374,372,424.5Q323,475,253,466Q183,457,136,412Q89,367,45,308.5Q1,250,39,187Q77,124,133,92.5Q189,61,243.5,82.5Q298,104,370.5,107Q443,110,422.5,180Q402,250,411.5,312Z;
+                
+                M446,317Q434,384,377,425Q320,466,252,459Q184,452,119.5,421.5Q55,391,40.5,320.5Q26,250,59.5,193Q93,136,145,111Q197,86,247.5,95Q298,104,369,108Q440,112,449,181Q458,250,446,317Z;
+                
+                M411,299.5Q387,349,353,405.5Q319,462,257.5,439Q196,416,129.5,401Q63,386,66.5,318Q70,250,75,188Q80,126,138,104.5Q196,83,252,77Q308,71,346,111.5Q384,152,409.5,201Q435,250,411,299.5Z">
+              </animate>
+            </path>
+          </svg>
+        </div>
+        <h1 class="hero-title">
+          <span class="hero-title-part-1">CONQUER</span>THE<span class="hero-title-part-2">UNIVERSE</span>
+        </h1>
+      </section>
+      <!-- ?=============== Introduction ===============-->
+      <section id="introduction" class="introduction">
+        <h2 class="introduction-title">INTRODUCTION</h2>
+        <div class="introduction__descriptions-container">
+          <div class="introduction__description-container">
+            <h3 class="introduction-subtitle"><i class="fad fa-dragon icon-dragon"></i> Choose <i
+                class="fad fa-dragon icon-dragon"></i></h3>
+            <p class="introduction-description">Choose one or more of the amazing pets on display</p>
+            <p class="introduction-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
+              officiis, sapiente saepe veritatis odit temporibus magnam necessitatibus fugiat est vero consequatur
+              assumenda voluptates expedita. Reprehenderit pariatur ab maiores at incidunt.</p>
+            <figure class="introduction__image-container">
+              <img class="introduction-image" src="assets/img/p21.png" alt="Image - Introduction">
+            </figure>
+          </div>
+          <div class="introduction__description-container">
+            <h3 class="introduction-subtitle"><i class="fad fa-swords icon-sword"></i> Train <i
+                class="fad fa-swords icon-sword"></i></h3>
+            <p class="introduction-description">Once you have decided who will be your next partner in this adventure.</p>
+            <p class="introduction-description">Start training, so you will have more chances to be able to achieve
+              victory
+              and get many rewards.</p>
+            <p class="introduction-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio
+              impedit facere consequatur deserunt cum assumenda perferendis exercitationem. Quis porro similique molestias
+              consequatur beatae. Veritatis at cupiditate ea ex dolore a?</p>
+            <figure class="introduction__image-container">
+              <img class="introduction-image" src="assets/img/p18.png" alt="Image - Introduction">
+            </figure>
+          </div>
+          <div class="introduction__description-container">
+            <h3 class="introduction-subtitle"><i class="fad fa-trophy-alt icon-trophy"></i> Enjoy <i
+                class="fad fa-trophy-alt icon-trophy"></i></h3>
+            <p class="introduction-description">Explore worlds, conquer kingdoms, build clans, defeat your enemies and
+              enjoy
+              this incredible adventure.</p>
+            <p class="introduction-description">Get the most exclusive pets in the universe and prepare to conquer it</p>
+            <p class="introduction-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia esse
+              necessitatibus atque reiciendis neque voluptatibus iste! Provident facere id sit officia quae molestias,
+              incidunt dignissimos recusandae amet aliquid laboriosam minima!</p>
+            <figure class="introduction__image-container">
+              <img class="introduction-image" src="assets/img/p9.png" alt="Image - Introduction">
+            </figure>
+          </div>
+        </div>
+      </section>
+      <!-- ?=============== Store ===============-->
+      <section id="store" class="store">
+        <h2 class="store-title">Store</h2>
+        <div class="store-slider">
+          <ul class="slides" id="slides">
+            <li class="slide">
+              <img class="slide-img" src="assets/img/p1.png" alt="img-slide">
+              <div class="slide-description-container">
+                <h3 class="slide-name">Zombie Enterrado</h3>
+                <p class="slide-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas commodi
+                  aperiam reprehenderit beatae, officia perspiciatis accusantium modi laboriosam exercitationem dicta!</p>
+                <button class="slide-btn">BUY</button>
+              </div>
+            </li>
+            <li class="slide">
+              <img class="slide-img" src="assets/img/p2.png" alt="img-slide">
+              <div class="slide-description-container">
+                <h3 class="slide-name">Zombie Enterrado</h3>
+                <p class="slide-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas commodi
+                  aperiam reprehenderit beatae, officia perspiciatis accusantium modi laboriosam exercitationem dicta!</p>
+                <button class="slide-btn">BUY</button>
+              </div>
+            </li>
+            <li class="slide">
+              <img class="slide-img" src="assets/img/p3.png" alt="img-slide">
+              <div class="slide-description-container">
+                <h3 class="slide-name">Zombie Enterrado</h3>
+                <p class="slide-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas commodi
+                  aperiam reprehenderit beatae, officia perspiciatis accusantium modi laboriosam exercitationem dicta!</p>
+                <button class="slide-btn">BUY</button>
+              </div>
+            </li>
+            <li class="slide">
+              <img class="slide-img" src="assets/img/p4.png" alt="img-slide">
+              <div class="slide-description-container">
+                <h3 class="slide-name">Zombie Enterrado</h3>
+                <p class="slide-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas commodi
+                  aperiam reprehenderit beatae, officia perspiciatis accusantium modi laboriosam exercitationem dicta!</p>
+                <button class="slide-btn">BUY</button>
+              </div>
+            </li>
+            <li class="slide">
+              <img class="slide-img" src="assets/img/p5.png" alt="img-slide">
+              <div class="slide-description-container">
+                <h3 class="slide-name">Zombie Enterrado</h3>
+                <p class="slide-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas commodi
+                  aperiam reprehenderit beatae, officia perspiciatis accusantium modi laboriosam exercitationem dicta!</p>
+                <button class="slide-btn">BUY</button>
+              </div>
+            </li>
+            <li class="slide">
+              <img class="slide-img" src="assets/img/p6.png" alt="img-slide">
+              <div class="slide-description-container">
+                <h3 class="slide-name">Zombie Enterrado</h3>
+                <p class="slide-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas commodi
+                  aperiam reprehenderit beatae, officia perspiciatis accusantium modi laboriosam exercitationem dicta!</p>
+                <button class="slide-btn">BUY</button>
+              </div>
+            </li>
+            <li class="slide">
+              <img class="slide-img" src="assets/img/p7.png" alt="img-slide">
+              <div class="slide-description-container">
+                <h3 class="slide-name">Zombie Enterrado</h3>
+                <p class="slide-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas commodi
+                  aperiam reprehenderit beatae, officia perspiciatis accusantium modi laboriosam exercitationem dicta!</p>
+                <button class="slide-btn">BUY</button>
+              </div>
+            </li>
+            <li class="slide">
+              <img class="slide-img" src="assets/img/p8.png" alt="img-slide">
+              <div class="slide-description-container">
+                <h3 class="slide-name">Zombie Enterrado</h3>
+                <p class="slide-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas commodi
+                  aperiam reprehenderit beatae, officia perspiciatis accusantium modi laboriosam exercitationem dicta!</p>
+                <button class="slide-btn">BUY</button>
+              </div>
+            </li>
+            <li class="slide">
+              <img class="slide-img" src="assets/img/p9.png" alt="img-slide">
+              <div class="slide-description-container">
+                <h3 class="slide-name">Zombie Enterrado</h3>
+                <p class="slide-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas commodi
+                  aperiam reprehenderit beatae, officia perspiciatis accusantium modi laboriosam exercitationem dicta!</p>
+                <button class="slide-btn">BUY</button>
+              </div>
+            </li>
+            <li class="slide">
+              <img class="slide-img" src="assets/img/p10.png" alt="img-slide">
+              <div class="slide-description-container">
+                <h3 class="slide-name">Zombie Enterrado</h3>
+                <p class="slide-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas commodi
+                  aperiam reprehenderit beatae, officia perspiciatis accusantium modi laboriosam exercitationem dicta!</p>
+                <button class="slide-btn">BUY</button>
+              </div>
+            </li>
+            <li class="slide">
+              <img class="slide-img" src="assets/img/p11.png" alt="img-slide">
+              <div class="slide-description-container">
+                <h3 class="slide-name">Zombie Enterrado</h3>
+                <p class="slide-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas commodi
+                  aperiam reprehenderit beatae, officia perspiciatis accusantium modi laboriosam exercitationem dicta!</p>
+                <button class="slide-btn">BUY</button>
+              </div>
+            </li>
+            <li class="slide">
+              <img class="slide-img" src="assets/img/p12.png" alt="img-slide">
+              <div class="slide-description-container">
+                <h3 class="slide-name">Zombie Enterrado</h3>
+                <p class="slide-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas commodi
+                  aperiam reprehenderit beatae, officia perspiciatis accusantium modi laboriosam exercitationem dicta!</p>
+                <button class="slide-btn">BUY</button>
+              </div>
+            </li>
+            <li class="slide">
+              <img class="slide-img" src="assets/img/p13.png" alt="img-slide">
+              <div class="slide-description-container">
+                <h3 class="slide-name">Zombie Enterrado</h3>
+                <p class="slide-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas commodi
+                  aperiam reprehenderit beatae, officia perspiciatis accusantium modi laboriosam exercitationem dicta!</p>
+                <button class="slide-btn">BUY</button>
+              </div>
+            </li>
+            <li class="slide">
+              <img class="slide-img" src="assets/img/p14.png" alt="img-slide">
+              <div class="slide-description-container">
+                <h3 class="slide-name">Zombie Enterrado</h3>
+                <p class="slide-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas commodi
+                  aperiam reprehenderit beatae, officia perspiciatis accusantium modi laboriosam exercitationem dicta!</p>
+                <button class="slide-btn">BUY</button>
+              </div>
+            </li>
+            <li class="slide">
+              <img class="slide-img" src="assets/img/p15.png" alt="img-slide">
+              <div class="slide-description-container">
+                <h3 class="slide-name">Zombie Enterrado</h3>
+                <p class="slide-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas commodi
+                  aperiam reprehenderit beatae, officia perspiciatis accusantium modi laboriosam exercitationem dicta!</p>
+                <button class="slide-btn">BUY</button>
+              </div>
+            </li>
+            <li class="slide">
+              <img class="slide-img" src="assets/img/p16.png" alt="img-slide">
+              <div class="slide-description-container">
+                <h3 class="slide-name">Zombie Enterrado</h3>
+                <p class="slide-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas commodi
+                  aperiam reprehenderit beatae, officia perspiciatis accusantium modi laboriosam exercitationem dicta!</p>
+                <button class="slide-btn">BUY</button>
+              </div>
+            </li>
+            <li class="slide">
+              <img class="slide-img" src="assets/img/p17.png" alt="img-slide">
+              <div class="slide-description-container">
+                <h3 class="slide-name">Zombie Enterrado</h3>
+                <p class="slide-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas commodi
+                  aperiam reprehenderit beatae, officia perspiciatis accusantium modi laboriosam exercitationem dicta!</p>
+                <button class="slide-btn">BUY</button>
+              </div>
+            </li>
+            <li class="slide">
+              <img class="slide-img" src="assets/img/p18.png" alt="img-slide">
+              <div class="slide-description-container">
+                <h3 class="slide-name">Zombie Enterrado</h3>
+                <p class="slide-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas commodi
+                  aperiam reprehenderit beatae, officia perspiciatis accusantium modi laboriosam exercitationem dicta!</p>
+                <button class="slide-btn">BUY</button>
+              </div>
+            </li>
+            <li class="slide">
+              <img class="slide-img" src="assets/img/p19.png" alt="img-slide">
+              <div class="slide-description-container">
+                <h3 class="slide-name">Zombie Enterrado</h3>
+                <p class="slide-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas commodi
+                  aperiam reprehenderit beatae, officia perspiciatis accusantium modi laboriosam exercitationem dicta!</p>
+                <button class="slide-btn">BUY</button>
+              </div>
+            </li>
+            <li class="slide">
+              <img class="slide-img" src="assets/img/p20.png" alt="img-slide">
+              <div class="slide-description-container">
+                <h3 class="slide-name">Zombie Enterrado</h3>
+                <p class="slide-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas commodi
+                  aperiam reprehenderit beatae, officia perspiciatis accusantium modi laboriosam exercitationem dicta!</p>
+                <button class="slide-btn">BUY</button>
+              </div>
+            </li>
+            <li class="slide">
+              <img class="slide-img" src="assets/img/p21.png" alt="img-slide">
+              <div class="slide-description-container">
+                <h3 class="slide-name">Zombie Enterrado</h3>
+                <p class="slide-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas commodi
+                  aperiam reprehenderit beatae, officia perspiciatis accusantium modi laboriosam exercitationem dicta!</p>
+                <button class="slide-btn">BUY</button>
+              </div>
+            </li>
+            <li class="slide">
+              <img class="slide-img" src="assets/img/p22.png" alt="img-slide">
+              <div class="slide-description-container">
+                <h3 class="slide-name">Zombie Enterrado</h3>
+                <p class="slide-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas commodi
+                  aperiam reprehenderit beatae, officia perspiciatis accusantium modi laboriosam exercitationem dicta!</p>
+                <button class="slide-btn">BUY</button>
+              </div>
+            </li>
+            <li class="slide">
+              <img class="slide-img" src="assets/img/p23.png" alt="img-slide">
+              <div class="slide-description-container">
+                <h3 class="slide-name">Zombie Enterrado</h3>
+                <p class="slide-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas commodi
+                  aperiam reprehenderit beatae, officia perspiciatis accusantium modi laboriosam exercitationem dicta!</p>
+                <button class="slide-btn">BUY</button>
+              </div>
+            </li>
+            <li class="slide">
+              <img class="slide-img" src="assets/img/p24.png" alt="img-slide">
+              <div class="slide-description-container">
+                <h3 class="slide-name">Zombie Enterrado</h3>
+                <p class="slide-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas commodi
+                  aperiam reprehenderit beatae, officia perspiciatis accusantium modi laboriosam exercitationem dicta!</p>
+                <button class="slide-btn">BUY</button>
+              </div>
+            </li>
+          </ul>
+          <a id="prev" class="store-btn-prev">
+            <i class="fas fa-caret-left"></i>
+          </a>
+          <a id="next" class="store-btn-next">
+            <i class="fas fa-caret-right"></i>
+          </a>
+        </div>
+      </section>
+      <!-- ?=============== About ===============-->
+      <section id="about" class="about">
+        <caption>
+          <h2 class="about-title">About</h2>
+        </caption>
+        <table class="questions-container">
+          <tbody class="questions">
+            <tr class="question-container">
+              <td>
+                <h3 class="about-question">¿ About us ?</h3>
+                <p class="about-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, vel earum optio
+                  nobis pariatur impedit!</p>
+                <figure class="about__image-container">
+                  <img class="about-image" src="assets/img/p11.png" alt="Image - about">
+                </figure>
+              </td>
+            </tr>
+            <tr class="question-container">
+              <td>
+                <h3 class="about-question">¿ How do we send it to you ?</h3>
+                <p class="about-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, vel earum optio
+                  nobis pariatur impedit!</p>
+                <figure class="about__image-container">
+                  <img class="about-image" src="assets/img/p21.png" alt="Image - about">
+                </figure>
+              </td>
+            </tr>
+            <tr class="question-container">
+              <td>
+                <h3 class="about-question">¿ Is there a type of guarantee ?</h3>
+                <p class="about-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, vel earum optio
+                  nobis pariatur impedit!</p>
+                <figure class="about__image-container">
+                  <img class="about-image" src="assets/img/p19.png" alt="Image - about">
+                </figure>
+              </td>
+            </tr>
+            <tr class="question-container">
+              <td>
+                <h3 class="about-question">¿ Are there returns ?</h3>
+                <p class="about-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, vel earum optio
+                  nobis pariatur impedit!</p>
+                <figure class="about__image-container">
+                  <img class="about-image" src="assets/img/p16.png" alt="Image - about">
+                </figure>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <!-- ?=============== Contact ===============-->
+      <section id="contact" class="contact">
+        <h2 class="contact-title">Contact</h2>
+        <form class="contact__form">
+          <input class="contact__form-input" type="email" placeholder="Enter your email" required>
+          <input class="contact__form-input" type="submit" value="Submit" readonly="false">
+        </form>
+        <ul class="contact__list-links">
+          <li class="contact__list-item">
+            <a href="#contact" class="contact-link">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li class="contact__list-item">
+            <a href="#contact" class="contact-link">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </li>
+          <li class="contact__list-item">
+            <a href="#contact" class="contact-link">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li class="contact__list-item">
+            <a href="#contact" class="contact-link">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li class="contact__list-item">
+            <a href="#contact" class="contact-link">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <!-- !=============== Footer ===============-->
+    <footer class="footer">
+      <div class="footer-autor">I designed and coded this website from scratch with much ❤️ © 2022</div>
+      <div class="footer-gratitude">Special thanks to <span class="footer-gratitude-name">Elliot Leo Garamendi</span>
+      </div>
+    </footer>
+    <!-- *=============== JS ===============-->
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
