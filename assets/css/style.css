@@ -47,3 +47,32 @@
   font-size: 16px;
   font-family: "Poppins", sans-serif;
 }
+
+/*! ======= Body Scroll ======= */
+
+.body::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.body::-webkit-scrollbar:vertical {
+  width:6px;
+}
+
+.body::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+  display: none;
+
+} 
+
+.body::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+
+.body::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  
+  background-color: #3b3b3b9a;
+}
+
+.body::-webkit-scrollbar-track {
+  border-radius: 10px;  
+}
